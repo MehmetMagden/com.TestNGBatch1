@@ -9,7 +9,7 @@
             <package name="tests.*"></package>
 
         </packages>
-        
+
         
     </test>
     

@@ -1,5 +1,7 @@
 package tests.day16;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
@@ -46,10 +48,14 @@ public class C03_NegativeTest {
 
     QualitydemyPage qualitydemyPage;
 
+
+
     @Test (groups = {"somke","miniReg1"})
     public void negativeTest01(){
 
         qualitydemyPage = new QualitydemyPage();
+
+
 
         //*********** first test
         // visit qualitydemy.com
@@ -84,6 +90,8 @@ public class C03_NegativeTest {
 
     @Test (groups = {"smoke","miniReg2"})
     public void negativeTest02(){
+
+
         //*********** second test
         // visit qualitydemy.com
         // click login button
@@ -118,6 +126,8 @@ public class C03_NegativeTest {
 
     @Test (groups = "smoke")
     public void negativeTest03(){
+
+
 
         //*********** third test
         // visit qualitydemy.com
@@ -160,6 +170,7 @@ public class C03_NegativeTest {
         // with empty password
         // click login button
         // test that you could not login
+
 
         qualitydemyPage = new QualitydemyPage();
 

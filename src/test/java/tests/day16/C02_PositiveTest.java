@@ -1,5 +1,7 @@
 package tests.day16;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
@@ -24,6 +26,7 @@ public class C02_PositiveTest {
     public void positiveTest01(){
 
         qualitydemyPage = new QualitydemyPage();
+
 
         // visit qualitydemy.com
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
