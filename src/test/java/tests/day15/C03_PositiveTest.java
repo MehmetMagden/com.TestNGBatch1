@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C03_PositiveTest {
 
-    @Test
+    @Test(groups = "smoke")
     public void test01(){
 
         // https://www.qualitydemy.com/

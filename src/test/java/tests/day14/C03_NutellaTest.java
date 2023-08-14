@@ -10,7 +10,7 @@ import utilities.Driver;
 
 public class C03_NutellaTest {
 
-    @Test
+    @Test (groups = {"smoke","miniReg1"})
     public void test01(){
 
         // go to amazon.com

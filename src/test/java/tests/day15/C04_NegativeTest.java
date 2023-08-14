@@ -44,7 +44,7 @@ public class C04_NegativeTest {
 
     QualitydemyPage qualitydemyPage;
 
-    @Test
+    @Test (groups = "smoke")
     public void negativeTest01(){
         //*********** first test
         // visit qualitydemy.com
@@ -76,7 +76,7 @@ public class C04_NegativeTest {
 
     }
 
-    @Test
+    @Test (groups = "miniReg2")
     public void negativeTest02(){
 
         //*********** second test
@@ -108,7 +108,7 @@ public class C04_NegativeTest {
 
     }
 
-    @Test
+    @Test(groups = "miniReg1")
     public void negativeTest03(){
 
         //*********** third test
@@ -140,7 +140,7 @@ public class C04_NegativeTest {
 
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void negativeTest04(){
 
 

@@ -20,7 +20,7 @@ public class C02_PositiveTest {
 
     QualitydemyPage qualitydemyPage;
 
-    @Test
+    @Test (groups = "smoke")
     public void positiveTest01(){
 
         qualitydemyPage = new QualitydemyPage();

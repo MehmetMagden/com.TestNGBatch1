@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class C01_SoftAssertion {
 
-    @Test
+    @Test(groups = "miniReg1")
     public void test91(){
 
         // go to the amazon.com

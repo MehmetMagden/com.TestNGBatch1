@@ -7,11 +7,13 @@ import utilities.ReusableMethods;
 
 public class C05_ScreenShot {
 
-    @Test
+    @Test (groups = "smoke")
     public void test01(){
 
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         ReusableMethods.getScreenshot("FirstSS");
+
+        Driver.closeDriver();
 
     }
 

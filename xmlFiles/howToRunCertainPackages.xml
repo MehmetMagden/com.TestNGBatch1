@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Running Packages">
+    <test name="running desired Packages">
+        
+        <packages>
+            
+            <package name="tests.day15"></package>
+            <package name="tests.day16"></package>
+            
+        </packages>
+
+    </test>
+    
+</suite>

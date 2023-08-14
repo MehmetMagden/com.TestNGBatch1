@@ -46,7 +46,7 @@ public class C03_NegativeTest {
 
     QualitydemyPage qualitydemyPage;
 
-    @Test
+    @Test (groups = {"somke","miniReg1"})
     public void negativeTest01(){
 
         qualitydemyPage = new QualitydemyPage();
@@ -82,7 +82,7 @@ public class C03_NegativeTest {
 
     }
 
-    @Test
+    @Test (groups = {"smoke","miniReg2"})
     public void negativeTest02(){
         //*********** second test
         // visit qualitydemy.com
@@ -116,7 +116,7 @@ public class C03_NegativeTest {
 
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void negativeTest03(){
 
         //*********** third test

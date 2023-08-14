@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Executing a group" verbose="10">
+
+    <test name="Executing desired group">
+
+        <!-- to execute desired groups
+        first we need to mark the methods by giving names to them after @Test notations
+        it should be like this : @Test ( groups = {"groupName1","groupName2"}
+        if there is only one group name we do not need to use curly brackets
+
+        to run desired methods
+        we need to set two things
+        1) Where are the groups ? ( we need to set package names, if we want to check all the packages we can write <package name="tests.*"></package>
+        2) what are the groups' names.
+
+        to enter these information
+        we need to create two hierarchy
+
+        first one will be about groups' names
+        second one will be about packages
+
+        we can give more than one name to a group
+
+        /**
+        if we want to see more detail about the test we are executing
+        we can use verbose
+
+        after the suite's name, we should press space then write verbose and enter a number from 1 to 10
+        10 means max detail
+        1 means min detail
+        **/
+
+
+            -->
+
+        <groups>
+
+            <run>
+<!--                 groups' names should be written here-->
+
+<!--                <include name="smoke"></include>-->
+                <include name="miniReg2"></include>
+                <exclude name="miniReg1"></exclude>
+
+            </run>
+
+        </groups>
+        
+        <packages>
+<!--                Address of groups ( packages ) should be entered here-->
+<!--            we can select specific packages or we can check all of them by using a "*", "*" means all of whem-->
+            <package name="tests.*"></package>
+
+        </packages>
+
+    </test>
+
+</suite>

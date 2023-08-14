@@ -13,7 +13,7 @@ import java.util.List;
 
 public class C02_SoftAssertionQuestion {
 
-    @Test
+    @Test (groups = {"miniReg1","miniReg2"})
     public void test(){
 
         //Create a New Class: C03_SoftAssert
@@ -101,7 +101,7 @@ public class C02_SoftAssertionQuestion {
         softAssert.assertAll();
 
 
-
+        Driver.closeDriver();
 
     }
 }

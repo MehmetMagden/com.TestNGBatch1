@@ -15,7 +15,7 @@ public class C04_HardAssert {
 
      */
 
-    @Test
+    @Test (groups = "miniReg2")
     public void test01(){
 
         Assert.assertTrue(6>5);
@@ -24,7 +24,7 @@ public class C04_HardAssert {
         Assert.assertTrue(7>5);
             System.out.println("after the second assertion");
 
-        Assert.assertTrue(2>5);
+        Assert.assertTrue(8>5);
             System.out.println("after the third assertion");
 
 

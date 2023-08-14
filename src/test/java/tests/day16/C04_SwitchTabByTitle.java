@@ -28,7 +28,7 @@ public class C04_SwitchTabByTitle {
         Assert.assertEquals(actualText,expectedText);
 
 
-        ReusableMethods.waitFor(5);
+
         Driver.quitDriver();
 
     }

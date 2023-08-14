@@ -2,10 +2,11 @@ package tests.day14;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import utilities.Driver;
 
 public class C05_SoftAssert {
 
-    @Test
+    @Test (groups = {"smoke","miniReg2"})
     public void test01(){
 
         // 1)  we need to create an object from SoftAssert class
@@ -41,6 +42,7 @@ public class C05_SoftAssert {
             where the problem is
              */
 
+        Driver.closeDriver();
 
     }
 }
