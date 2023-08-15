@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Paralel Tests running" parallel="tests" thread-count="2">
+
+    <test name="Running desired Tests in paralel1">
+
+        <classes>
+            <class name="tests.day16.C03_NegativeTest"></class>
+            <class name="tests.day14.C04_HardAssert"></class>
+
+        </classes>
+
+    </test>
+
+    <test name="Running desired Tests in Paralel2">
+
+        <classes>
+
+            <class name="tests.day15.C04_NegativeTest"></class>
+            <class name="tests.day15.C03_PositiveTest"></class>
+
+        </classes>
+
+
+    </test>
+
+
+
+</suite>
